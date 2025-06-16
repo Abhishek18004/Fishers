@@ -39,7 +39,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 1px;
-  text-transform: uppercase; /* optional for that clean look */
+  text-transform: uppercase; 
 }
 
 /* MAIN */
@@ -49,6 +49,8 @@ body {
   flex-direction: column;
 }
 
+
+/* INPUT BOX */
 .main1 {
   display: flex;
   justify-content: flex-end;
@@ -79,7 +81,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* CENTER Align Input & Button */
 .center-align {
   display: flex;
   justify-content: center;
@@ -153,7 +154,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px; /* or even 10px */
+  gap: 100px; 
   text-align: center;
 }
 
@@ -220,5 +221,5 @@ body {
 }
 
 .team-columns div > div {
-  margin-bottom: 12px; /* add space between names */
+  margin-bottom: 12px; 
 }

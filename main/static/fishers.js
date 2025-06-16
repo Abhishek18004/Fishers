@@ -12,9 +12,9 @@ function submitted() {
     // ✅ Check if the input is empty
     if (!url) {
         resultMessage.innerText = "⚠️ Please paste a URL before submitting.";
-        resultMessage.style.color = "#000000"; // Orange color
+        resultMessage.style.color = "#000000"; 
         resultMessage.classList.remove("hidden");
-        return; // Stop the function here
+        return; 
     }
 
     loadingSpinner.style.display = 'block';
