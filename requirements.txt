@@ -1,0 +1,24 @@
+# Core Python Libraries
+numpy
+pandas
+matplotlib
+seaborn
+
+# ML Models
+scikit-learn
+
+# Web-related Features
+requests
+beautifulsoup4
+python-whois
+python-googlesearch
+tldextract
+
+# URL & Date Parsing
+python-dateutil
+
+# Flask App
+Flask
+
+# For resolving URLs and IPs
+dnspython

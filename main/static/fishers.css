@@ -1,286 +1,224 @@
+/* GLOBAL */
 * {
-    margin: 0;
-    padding: 0;
-    margin: margin-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 10vh;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-/* Header */
-
+/* HEADER */
 .head1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #222831;
-    height: 11vh;
-    width: 100vw;
-    color: #EEEEEE;
-    position: fixed;
-    z-index: 5;
-
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  height: 12vh;
+  padding: 0 20px;
+  color: #fff;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
 }
 
 .box1 {
-    background-image: url(phishing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    width: 200px;
-    position: absolute;
-    left: 40px;
-
+  background-image: url(phishing_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 150px;
 }
 
 .box2 {
-    display: flex;
-    align-items: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    font-style: italic;
-    height: 80px;
-    width: 400px;
-    position: absolute;
-    left: 37vw;
-
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* optional for that clean look */
 }
 
-.typed {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing;
-    animation-duration: 3.5s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* Main */
+/* MAIN */
 .mainn {
-    display: flex;
-    flex-direction: column;
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Main 1 */
 .main1 {
-    display: flex;
-    /* position: fixed; */
-    background-image: url("back.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  
-    height: 60vh;
-    width: 100vw;
-    z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("hero_background.png");
+  background-size: cover;
+  height: 60vh;
+  padding-right: 5vw;
 }
-
-
-
 
 .m2 {
-    z-index: 1;
-    position: absolute;
-    height: 30vh;
-    width: 50vw;
-    background-color: rgba(179, 177, 176, 0.691);
-    right: 100px;
-    top: 140px;
-    border-color: #222831;
-    border-radius: 20px;
-    border-style: double;
-    border-width: 10px;
-
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  width: 45vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.m3 {
-    margin-left: 20px;
-    margin-top: 10px;
-    font-family: 'Playfair Display', serif;
-    font-size: larger;
-    font-weight: bolder;
+.m3 h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 32px;
+  color: #000f43;
+  margin-bottom: 10px;
 }
 
 .m4 {
-    margin-left: 20px;
-    font-family: 'Abel', sans-serif;
-    font-size: large;
-    font-weight: bolder;
+  font-size: 21px;
+  margin-bottom: 20px;
 }
 
-.url {
-    position: relative;
-    left: 20px;
+/* CENTER Align Input & Button */
+.center-align {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.submit {
-    position: absolute;
-    bottom: 70px;
-    right: 30px;
-    border: 2px solid black;
+.center-align input[type="url"] {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
-#result-message{
-    font-size: 25px;
-    color: green;
-}
-#result-message2{
-    font-size: 25px;
-    color: red;
-}
-
-/* Main 2 */
-.main2 {
-    z-index: 0;
-    /* margin-top: 60vh; */
-    border-top: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background-color: #30475E;
-
+.center-align input[type="submit"] {
+  background-color: #fb8d00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.info1,
-.info2,
-.info3 {
-    display: flex;
-    flex-direction: row;
-    height: 70vh;
-    color: rgba(255, 255, 255, 0.648);
-
+/* RESULTS */
+#result-message, #result-message2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.image1,
-.content1,
-.image2,
-.content2,
-.image3,
-.content3 {
-    display: flex;
-    position: absolute;
-    font-family: 'Abel', sans-serif;
+.hidden {
+  display: none;
 }
 
-.heading {
-    display: flex;
-    height: 5vh;
-    margin-top: 5px;
-    color: rgb(198, 192, 192);
-    align-items: bottom;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.image1 {
-    /* bottom: -500px; */
-    left: 100px;
-    background-image: url("img1.png");
-    height:275px;
-    width: 275px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.content1 {
-    font-size: 25px;
-    text-align: center;
-    height: 31vh;
-    width: 70vw;
-    right: 25px;
-    align-items: flex-end;
-
-}
-
-.image2 {
-    align-items: flex-end;
-    right: 100px;
-    background-image: url("img2.png");
-    height:250px;
-    width: 250px;
-    background-size: contain;
-}
-
-.content2 {
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    height: 31vh;
-    width: 70vw;
-    left: 25px;
-
-}
-
-.image3 {
-    left: 50px;
-    background-image: url("img3.png");
-    height:242px;
-    width: 375px;
-    background-size: contain;
-}
-
-.content3 {
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    height: 31vh;
-    right: 25px;
-    width: 65vw;
-}
-
-/* Footer */
-.foot{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color:#222831;
-    z-index: 2;
-    height: 30vh;
-    width: 100vw;
-    margin-top: 1px;
-    color: white;
-    font-family: 'Abel', sans-serif;
-    font-size: large;
-    
-    font-weight: bolder;
-}
-.about,.contact{
-    margin-top: 10px;
-}
-.about{
-    width: 10vw;
-}
+/* SPINNER */
 .spinner {
-    display: none;
-    border: 4px solid rgba(11, 1, 1, 0.3);
-    border-radius: 50%;
-    border-top: 4px solid #3498db;
-    width: 40px;
-    height: 40px;
-    animation: spin 2s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-  
+  display: none;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #fb8d00;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ABOUT SECTION */
+.main2 {
+  background-color: #0e1633;
+  color: white;
+  padding: 40px 20px;
+}
+
+.heading h1 {
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 34px;
+  color: #fb8d00;
+}
+
+.about-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px; /* or even 10px */
+  text-align: center;
+}
+
+
+.about-card {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.image1 { background-image: url("phishing_intro.png"); }
+.image2 { background-image: url("phishing_detection.png"); }
+.image3 { background-image: url("phishing_stats.png"); }
+
+.content {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* FOOTER */
+.foot {
+  background-color: #000000;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.foot h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: #fb8d00;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.foot p {
+  margin-bottom: 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+
+.team-columns {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  font-size: 17px;
+}
+
+.team-columns div {
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.team-columns div > div {
+  margin-bottom: 12px; /* add space between names */
+}
