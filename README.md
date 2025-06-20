@@ -6,20 +6,20 @@
 ## Features
 
 - **URL Safety Detection**
-- Enter a URL and get immediate analysis on safety or suspicion
-- Displays crisp visual cues along with informative feedback messages
+    - Enter a URL and get immediate analysis on safety or suspicion
+    - Displays crisp visual cues along with informative feedback messages
 
 - **Machine Learning Integration**
-- Trained on a dataset of more than 30+ engineered URL-based features
-- Very high accuracy in separation between legitimate and phishing links
+    - Trained on a dataset of more than 30+ engineered URL-based features
+    - Very high accuracy in separation between legitimate and phishing links
 
 - **Interactive Web Interface**
-- Simple UI for input and output
-- Spinner and result messages show up only upon user submission
+    - Simple UI for input and output
+    - Spinner and result messages show up only upon user submission
 
 - **Responsive Design**
-- Desktop-ready layout with styled inputs and feedback
-- Clean, readable design with branded color scheme
+    - Desktop-ready layout with styled inputs and feedback
+    - Clean, readable design with branded color scheme
 
 
 ## Tech Stack
