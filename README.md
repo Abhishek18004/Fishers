@@ -79,7 +79,7 @@ Fishers/
 ![Phishing Result](screenshots/Phishing_URL.png)
 5. **Phishing Facts** – This section explains about phishing attacks.
 ![Phishing Facts](screenshots/Phishing_Facts.png)
-6. **Footer Section** – About Us footer, our hackathon team information.
+6. **Footer Section** – the hackathon team's information written in the footer.
 ![Footer](screenshots/Footer.png)
 
 
@@ -118,9 +118,9 @@ http://127.0.0.1:5000/
 
 
 ## Caught and coded by Team Fishers
-Sneha Subbarayudu (sbayanab@gitam.in)
-Keerthi Ummiti (mummiti@gitam.in)
-Abhishek Karthik (akarthik2@gitam.in)
-Daksh Mohan (mdaksh@gitam.in)
-Helly Khatri (hkhatri@gitam.in)
-Punit Javvaji (pjavvaji@gitam.in)
+- Sneha Subbarayudu (sbayanab@gitam.in)
+- Keerthi Ummiti (mummiti@gitam.in)
+- Abhishek Karthik (akarthik2@gitam.in)
+- Daksh Mohan (mdaksh@gitam.in)
+- Helly Khatri (hkhatri@gitam.in)
+- Punit Javvaji (pjavvaji@gitam.in)
